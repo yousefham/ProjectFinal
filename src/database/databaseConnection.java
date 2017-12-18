@@ -28,7 +28,8 @@ public class databaseConnection {
         if (INSTANCE == null) {
             INSTANCE = getcon();
         }
-        return INSTANCE;
+        return INSTANCE; 
+        
     }
 
     private static Connection getcon() {
