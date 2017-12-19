@@ -5,6 +5,8 @@
  */
 package GUISwing;
 
+import Domain.SearchStrategy;
+import Domain.StrategyContext;
 import Domain.manageEmployee;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -226,6 +228,7 @@ public class DeleteEmployee extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        SearchStrategy sea = null;
         if (nameCH.isSelected()) {
             try {
                 manageEmployee emp = new manageEmployee();
@@ -284,7 +287,7 @@ public class DeleteEmployee extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-         this.setVisible(false);
+        this.setVisible(false);
         new Thread(new Runnable() {
             @Override
             public void run() {
