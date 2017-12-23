@@ -5,6 +5,8 @@
  */
 package cwm;
 
+import GUISwing.Main;
+
 /**
  *
  * @author hp
@@ -16,6 +18,7 @@ public class CWM {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new Main().setVisible(true);
     }
     
 }
